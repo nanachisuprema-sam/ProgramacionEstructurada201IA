@@ -1,19 +1,25 @@
-def demostracion():
-    print("--ejeplos de match")
-    opcion= input("ingrese una opcion (1-3)")
+def diasem():
+    print("Dias de la semana")
+    dia= input("ingrese un numero del 1-7")
 
-    match opcion:
+    match dia:
         case "1":
-            print("opcion 1 seleccionada")
-            nombre= input("ingrese su nombre: ")
-            print(f"hola {nombre}!")
+            print("lunes")
         case "2":
-            print("opcion 2 seleccionada")
-            matricula= input("ingrese matricula: ")
-            print(f"su matricula es: {matricula}")
+            print("martes")
         case "3":
-            print("opcion 3 seleccionada")
-            semestre= input("ingrese su semestre: ")
-            print(f"usted está en el semestre: {semestre}")
-        case _:
-            print("opcion no valida")
+            print("miercoles")
+        case "4":
+            print("jueves")
+        case "5":
+            print("viernes")
+        case "6":
+            print("sabado")
+        case "7":
+            print("domingo")
+
+def main():
+    diasem()
+
+if __name__== "__main__":
+    main()
