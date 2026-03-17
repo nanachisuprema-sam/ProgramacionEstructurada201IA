@@ -39,5 +39,5 @@ def ejemplo_do_while():
             break
         else:
             print("acceso denegado, intentar de nuevo")
-        break
-    print("\n")
+            break
+        print("\n")
