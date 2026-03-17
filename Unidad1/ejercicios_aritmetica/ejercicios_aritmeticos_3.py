@@ -6,16 +6,20 @@ def mostrar_funciones_math(numero):
 
     sen_x=math.sin(numero)
     conse_x=math.cos(numero)
+    #agrega tan
+    tan_x=math.tan(numero)
 
     print("el seno de", numero, "es:", sen_x)
     print("el coseno de", numero, "es:", conse_x)
+    print("el tangente de", numero, "es:", tan_x)
 
-    resultado= sen_x ** 2 + conse_x ** 2
+    resultado= sen_x ** 2 + conse_x ** 2 + tan_x** 2
 
-    print("el resultado de sen^2(x) es:", resultado)
+    print("el resultado de sen^2(x) + cos^2(x) es:", resultado)
 
 def main():
     numero= float(input("ingrese numero: "))
     mostrar_funciones_math(numero)
+    
 if __name__== "__main__":
     main()
