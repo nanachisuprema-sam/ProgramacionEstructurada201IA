@@ -1,5 +1,5 @@
 N = int(input("Ingresa un número: "))
-
+#sammmm int e input acuerdateee
 if N < 0:
     print("No existe el factorial de números negativos")
 else:
