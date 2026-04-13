@@ -1,5 +1,4 @@
 #limpieza de datos, normalización
-
 UMBRAL_ALTO=0.7
 UMBRAL_BAJO=0.3
 
@@ -11,7 +10,7 @@ def clasificar_pixeles():
         print("error: valor de pixel invalido")
         return
     if 0.0 <= intensidad <= UMBRAL_BAJO:
-        print(" Clasificación (fondo oscuro)")
+        print(" Clasificación } (fondo oscuro)")
         return
     if UMBRAL_BAJO < intensidad < UMBRAL_ALTO:
         print("clasificación (fondo gris)")
@@ -23,5 +22,6 @@ def clasificar_pixeles():
 
 def main():
     clasificar_pixeles()
+
 if __name__=="__main__":
     main()
