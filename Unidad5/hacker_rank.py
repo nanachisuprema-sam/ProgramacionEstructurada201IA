@@ -19,3 +19,13 @@ b=int(num2)
 print(a+b)
 print(a-b)
 print(a*b)
+
+print("ejercicio 3")
+c = int(input())
+d = int(input())
+
+# 1. División entera
+print(c // d)
+
+# 2. División flotante
+print(c / d)
