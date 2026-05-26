@@ -7,4 +7,5 @@ elif num % 2==0 and 6<= num  <=20:
 elif num % 2==0 and num>20: #aca
     print("Not Weird")
 else: 
+    
     print("Weird")
