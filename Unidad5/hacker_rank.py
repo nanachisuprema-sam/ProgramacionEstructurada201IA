@@ -1,3 +1,4 @@
+print("Ejercicio 1")
 n=input("Escribe un numero nnmssss")
 num=int(n)
 if num % 2==0 and 2<= num  <= 5:
@@ -9,3 +10,12 @@ elif num % 2==0 and num>20: #aca
 else: 
     
     print("Weird")
+
+print("Ejercicio 2")
+num1=input("Primer digito")
+a=int(num1)
+num2=input("Segundo digito")
+b=int(num2)
+print(a+b)
+print(a-b)
+print(a*b)
