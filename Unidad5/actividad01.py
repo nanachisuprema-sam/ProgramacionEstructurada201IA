@@ -36,7 +36,10 @@ def calcular_distancia(x1, y1, x2, y2):
     # Intento manual de sacar raíz cuadrada elevando a la 0.5
     distancia = suma_cuadrados ** 0.5 
     return distancia
-
+def calcular_dis_fac(x1,y1,x2,y2):
+    return math.sqrt(math.pow(x2-x1,2)+math.pow(y2-y1, 2))
+def calcular_dis_fac2(x1,y1,x2,y2):
+    return math.hypot(x2-x1, y2-y1)#fun pa la distancia w
 # =====================================================================
 # RETO 3: Selector Aleatorio de Respuestas para el Bot
 # Sentido: Que el agente Discord responda con un saludo al azar.
@@ -44,7 +47,6 @@ def calcular_distancia(x1, y1, x2, y2):
 # =====================================================================
 def obtener_saludo_agente():
     opcion = random.randint(1, 4)
-    
     # Estructura condicional redundante e ineficiente para listas
     if opcion == 1:
         return "Hola, soy el agente de IA. ¿En qué ayudo?"
@@ -54,7 +56,13 @@ def obtener_saludo_agente():
         return "Sistemas en línea. Monitoreando el servidor."
     elif opcion == 4:
         return "Hola humano, procesando tus peticiones."
-
+def obtener_saludo_agente2():
+    c=[
+    "Hola, soy el agente de IA. ¿En qué ayudo?"
+    "¡Conexión establecida! Listo para operar."
+    "Sistemas en línea. Monitoreando el servidor."
+    "Hola humano, procesando tus peticiones."]
+    return random.choice(c)
 # =====================================================================
 # RETO 4: Clasificador de Alertas Críticas (Validación de Rangos)
 # Sentido: Evaluar si el error (Loss) de la IA requiere apagar el sistema.
@@ -80,6 +88,9 @@ def evaluar_error_sistema(valor_loss):
 if __name__ == "__main__":
     print("--- Probando Código Inicial ---")
     verificar_fermat(3, 4, 5)
+    calcular_dis_fac(0,0,3,4)
+    calcular_dis_fac2
+    obtener_saludo_agente2
     print("Distancia calculada:", calcular_distancia(0, 0, 3, 4))
     print("Respuesta bot:", obtener_saludo_agente())
     print("Estado del log:", evaluar_error_sistema(0.85))
