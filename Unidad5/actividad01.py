@@ -3,7 +3,10 @@ Materia: Programación Estructurada
 Laboratorio: Refactorización y Análisis de Código
 Alumno: [Samantha]
 """
-import random  # Única librería importada por el novato
+import random  
+import math
+
+# Única librería importada por el novato
 # Se puede usar la bibliotaca math para la distancia (math.dist())
 # =====================================================================
 # RETO 1: El Teorema de Fermat
